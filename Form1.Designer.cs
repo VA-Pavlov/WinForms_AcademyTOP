@@ -40,8 +40,8 @@
             label1 = new Label();
             textBox2 = new TextBox();
             groupBox1 = new GroupBox();
-            radioButton4 = new RadioButton();
             radioButton5 = new RadioButton();
+            radioButton4 = new RadioButton();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -156,17 +156,6 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             // 
-            // radioButton4
-            // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(12, 29);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(94, 19);
-            radioButton4.TabIndex = 0;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "radioButton4";
-            radioButton4.UseVisualStyleBackColor = true;
-            // 
             // radioButton5
             // 
             radioButton5.AutoSize = true;
@@ -177,6 +166,17 @@
             radioButton5.TabStop = true;
             radioButton5.Text = "radioButton5";
             radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            radioButton4.AutoSize = true;
+            radioButton4.Location = new Point(12, 29);
+            radioButton4.Name = "radioButton4";
+            radioButton4.Size = new Size(94, 19);
+            radioButton4.TabIndex = 0;
+            radioButton4.TabStop = true;
+            radioButton4.Text = "radioButton4";
+            radioButton4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
