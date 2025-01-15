@@ -87,6 +87,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Hello Мир!";
+            MouseDown += Mouse_Click;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -97,5 +98,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Button stringButton;
     }
 }
