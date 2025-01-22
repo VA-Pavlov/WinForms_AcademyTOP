@@ -30,15 +30,15 @@
         {
             checkedListBox1 = new CheckedListBox();
             tovarsComboBox = new ComboBox();
-            label1 = new Label();
+            priceLabel = new Label();
             numericUpDown1 = new NumericUpDown();
             label2 = new Label();
             button1 = new Button();
             button2 = new Button();
             groupBox1 = new GroupBox();
+            label3 = new Label();
             button3 = new Button();
             button4 = new Button();
-            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -52,6 +52,7 @@
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(519, 140);
             checkedListBox1.TabIndex = 0;
+            checkedListBox1.SelectedValueChanged += checkedListBox1_SelectedValueChanged;
             // 
             // tovarsComboBox
             // 
@@ -61,15 +62,15 @@
             tovarsComboBox.Size = new Size(348, 23);
             tovarsComboBox.TabIndex = 1;
             // 
-            // label1
+            // priceLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(470, 266);
-            label1.Name = "label1";
-            label1.Size = new Size(43, 30);
-            label1.TabIndex = 2;
-            label1.Text = "0,0";
+            priceLabel.AutoSize = true;
+            priceLabel.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            priceLabel.Location = new Point(451, 266);
+            priceLabel.Name = "priceLabel";
+            priceLabel.Size = new Size(43, 30);
+            priceLabel.TabIndex = 2;
+            priceLabel.Text = "0,0";
             // 
             // numericUpDown1
             // 
@@ -109,6 +110,7 @@
             button2.TabIndex = 6;
             button2.Text = "Выдать чек";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // groupBox1
             // 
@@ -117,7 +119,7 @@
             groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(tovarsComboBox);
             groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(priceLabel);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(numericUpDown1);
             groupBox1.Location = new Point(12, 12);
@@ -126,6 +128,15 @@
             groupBox1.TabIndex = 7;
             groupBox1.TabStop = false;
             groupBox1.Text = "Касса";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(511, 278);
+            label3.Name = "label3";
+            label3.Size = new Size(17, 15);
+            label3.TabIndex = 7;
+            label3.Text = "р.";
             // 
             // button3
             // 
@@ -146,15 +157,6 @@
             button4.Text = "Склад";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(511, 278);
-            label3.Name = "label3";
-            label3.Size = new Size(17, 15);
-            label3.TabIndex = 7;
-            label3.Text = "р.";
             // 
             // MainForm
             // 
@@ -177,7 +179,7 @@
 
         private CheckedListBox checkedListBox1;
         private ComboBox tovarsComboBox;
-        private Label label1;
+        private Label priceLabel;
         private NumericUpDown numericUpDown1;
         private Label label2;
         private Button button1;

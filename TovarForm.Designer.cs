@@ -168,9 +168,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(27, 235);
             label2.Name = "label2";
-            label2.Size = new Size(119, 20);
+            label2.Size = new Size(135, 20);
             label2.TabIndex = 11;
-            label2.Text = "Стоимость (шт)";
+            label2.Text = "Стоимость (за кг)";
             // 
             // numericUpDown2
             // 

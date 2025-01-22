@@ -19,5 +19,9 @@ namespace WinForms_AcademyTOP.Properties
         {
             return tovars;
         }
+        public static void changeTovars(List<Tovar> array)
+        {
+            tovars = array;
+        }
     }
 }

@@ -27,7 +27,21 @@ namespace WinForms_AcademyTOP
                 listBox1.Items.Remove(tovar);
                 listBox1.Items.Add(tovar);
             }
-                
+
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Remove(listBox1.SelectedItem);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            List<Tovar> tovars = new List<Tovar>();
+            foreach (Tovar tovar in listBox1.Items)
+                tovars.Add(tovar);
+            Sclad.changeTovars(tovars);
+            this.Close();
         }
     }
 }
