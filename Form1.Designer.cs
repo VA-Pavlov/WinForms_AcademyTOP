@@ -71,6 +71,7 @@
             editButton.TabIndex = 3;
             editButton.Text = "Изменить товар";
             editButton.UseVisualStyleBackColor = true;
+            editButton.Click += editButton_Click;
             // 
             // button1
             // 

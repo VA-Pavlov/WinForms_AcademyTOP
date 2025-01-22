@@ -38,6 +38,7 @@
             groupBox1 = new GroupBox();
             button3 = new Button();
             button4 = new Button();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -83,9 +84,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(516, 35);
             label2.Name = "label2";
-            label2.Size = new Size(26, 15);
+            label2.Size = new Size(18, 15);
             label2.TabIndex = 4;
-            label2.Text = "шт.";
+            label2.Text = "кг";
             // 
             // button1
             // 
@@ -111,6 +112,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(checkedListBox1);
             groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(tovarsComboBox);
@@ -145,6 +147,15 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(511, 278);
+            label3.Name = "label3";
+            label3.Size = new Size(17, 15);
+            label3.TabIndex = 7;
+            label3.Text = "р.";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -174,5 +185,6 @@
         private GroupBox groupBox1;
         private Button button3;
         private Button button4;
+        private Label label3;
     }
 }

@@ -19,6 +19,13 @@ namespace WinForms_AcademyTOP
             InitializeComponent();
             NewTovar = tovar;
             radioButtons = new RadioButton[] { radioButton2, radioButton1, radioButton3, radioButton4};
+
+            if (NewTovar != null )
+            {
+                nameTextBox.Text = NewTovar.Name;
+                numericUpDown1.Value = NewTovar.ValueInSclad;
+                numericUpDown2.Value = NewTovar.Price;
+            }
         }
 
         private void saveButton_Click(object sender, EventArgs e)
