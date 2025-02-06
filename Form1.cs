@@ -6,5 +6,35 @@ namespace WinForms_AcademyTOP
         {
             InitializeComponent();
         }
+
+        private String CoordinatesToString(MouseEventArgs e)
+        {
+            return "Координаты мыши: х=" + e.X.ToString() + "; y=" + e.Y.ToString();
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            //отображение текущих координат мыши в заголовке окна
+            label1.Text = CoordinatesToString(e);
+        }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+            //определим какую кнопку мыши нажал пользователь
+            String message = "";
+            if (e.Button == MouseButtons.Right)
+            {
+                message = "Вы нажали правую кнопку мыши.";
+            }
+            if (e.Button == MouseButtons.Left)
+            {
+                message = "Вы нажали левую кнопку мыши.";
+            }
+            message += "\n" + CoordinatesToString(e);
+
+            //выведем сообщение в диалоговое окно
+            String caption = "Клик мыши";
+            MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
