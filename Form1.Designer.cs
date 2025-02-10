@@ -35,12 +35,14 @@
             toolStripMenuItem1 = new ToolStripSeparator();
             пП12ToolStripMenuItem = new ToolStripMenuItem();
             toolStripComboBox1 = new ToolStripComboBox();
+            wdtnNtrcnfToolStripMenuItem = new ToolStripMenuItem();
             пункт2ToolStripMenuItem = new ToolStripMenuItem();
             красеыйToolStripMenuItem = new ToolStripMenuItem();
             зеленыйToolStripMenuItem = new ToolStripMenuItem();
             contextMenuStrip1 = new ContextMenuStrip(components);
             красныйToolStripMenuItem = new ToolStripMenuItem();
             textBox1 = new TextBox();
+            button1 = new Button();
             menuStrip1.SuspendLayout();
             contextMenuStrip1.SuspendLayout();
             SuspendLayout();
@@ -56,7 +58,7 @@
             // 
             // пункт1ToolStripMenuItem
             // 
-            пункт1ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { пП11ToolStripMenuItem, toolStripMenuItem1, пП12ToolStripMenuItem, toolStripComboBox1 });
+            пункт1ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { пП11ToolStripMenuItem, toolStripMenuItem1, пП12ToolStripMenuItem, toolStripComboBox1, wdtnNtrcnfToolStripMenuItem });
             пункт1ToolStripMenuItem.Name = "пункт1ToolStripMenuItem";
             пункт1ToolStripMenuItem.Size = new Size(61, 20);
             пункт1ToolStripMenuItem.Text = "Пункт 1";
@@ -85,6 +87,13 @@
             toolStripComboBox1.Name = "toolStripComboBox1";
             toolStripComboBox1.Size = new Size(121, 23);
             toolStripComboBox1.Click += toolStripComboBox1_Click;
+            // 
+            // wdtnNtrcnfToolStripMenuItem
+            // 
+            wdtnNtrcnfToolStripMenuItem.Name = "wdtnNtrcnfToolStripMenuItem";
+            wdtnNtrcnfToolStripMenuItem.Size = new Size(181, 22);
+            wdtnNtrcnfToolStripMenuItem.Text = "wdtn ntrcnf";
+            wdtnNtrcnfToolStripMenuItem.Click += wdtnNtrcnfToolStripMenuItem_Click;
             // 
             // пункт2ToolStripMenuItem
             // 
@@ -129,17 +138,30 @@
             // 
             // textBox1
             // 
+            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBox1.Location = new Point(45, 40);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
+            textBox1.ScrollBars = ScrollBars.Vertical;
             textBox1.Size = new Size(716, 382);
             textBox1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(193, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 2;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -166,5 +188,7 @@
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem красныйToolStripMenuItem;
         private TextBox textBox1;
+        private Button button1;
+        private ToolStripMenuItem wdtnNtrcnfToolStripMenuItem;
     }
 }
